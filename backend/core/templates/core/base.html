@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+
+        {% include "core/nav.html" %}
+
+        <div>
+            {% block content %}
+            <!-- Content will be injected here -->
+            {% endblock %}
+        </div>
+
+        {% include "core/footer.html" %}
+
+    </body>
+</html>

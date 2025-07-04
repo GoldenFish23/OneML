@@ -1,0 +1,29 @@
+<nav>
+    <div class = nav-section-one-logo>
+        <h1>OneML</h1>
+    </div>
+    <div class = nav-section-two-links>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="http://localhost:3000/">Playground</a></li>
+            <li><a href="{% url 'documentation' %}">Documentation</a></li>
+        </ul>
+    </div>
+</nav>
+
+<style>
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0px;
+        display: flex;
+    }
+    a{
+        padding: 15px;
+    }
+</style>
